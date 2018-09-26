@@ -8,7 +8,9 @@ plugins {
 // Define the main class for the application
 mainClassName = 'ru.arlen.TestRun'
 
+// JDK version for compilation
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     jcenter()
@@ -27,4 +29,5 @@ dependencies {
 jar {
     baseName = 'CurrencyAsset'
     version = '1.0'
+    manifest.attributes('Main-Class': mainClassName)
 }
